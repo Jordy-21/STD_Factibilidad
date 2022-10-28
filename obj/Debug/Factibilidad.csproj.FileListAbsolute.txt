@@ -1,0 +1,16 @@
+D:\Proyecto de C#\Factibilidad\Factibilidad\obj\Debug\Factibilidad.csproj.AssemblyReference.cache
+D:\Proyecto de C#\Factibilidad\Factibilidad\obj\Debug\Factibilidad.csproj.SuggestedBindingRedirects.cache
+D:\Proyecto de C#\Factibilidad\Factibilidad\obj\Debug\Factibilidad.Presentacion.MapasGoogle.resources
+D:\Proyecto de C#\Factibilidad\Factibilidad\obj\Debug\Factibilidad.Presentacion.MenuPrincipal.resources
+D:\Proyecto de C#\Factibilidad\Factibilidad\obj\Debug\Factibilidad.Presentacion.RegistroVirtual.resources
+D:\Proyecto de C#\Factibilidad\Factibilidad\obj\Debug\Factibilidad.Properties.Resources.resources
+D:\Proyecto de C#\Factibilidad\Factibilidad\obj\Debug\Factibilidad.csproj.GenerateResource.cache
+D:\Proyecto de C#\Factibilidad\Factibilidad\obj\Debug\Factibilidad.csproj.CoreCompileInputs.cache
+D:\Proyecto de C#\Factibilidad\Factibilidad\bin\Debug\Factibilidad.exe.config
+D:\Proyecto de C#\Factibilidad\Factibilidad\bin\Debug\Factibilidad.exe
+D:\Proyecto de C#\Factibilidad\Factibilidad\bin\Debug\Factibilidad.pdb
+D:\Proyecto de C#\Factibilidad\Factibilidad\bin\Debug\GMap.NET.Core.dll
+D:\Proyecto de C#\Factibilidad\Factibilidad\bin\Debug\GMap.NET.WindowsForms.dll
+D:\Proyecto de C#\Factibilidad\Factibilidad\obj\Debug\Factibilidad.csproj.CopyComplete
+D:\Proyecto de C#\Factibilidad\Factibilidad\obj\Debug\Factibilidad.exe
+D:\Proyecto de C#\Factibilidad\Factibilidad\obj\Debug\Factibilidad.pdb
