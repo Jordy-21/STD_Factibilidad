@@ -69,7 +69,7 @@ namespace Factibilidad.Presentacion
 
         private void SeleccionarRegistro(object sender, DataGridViewCellMouseEventArgs e)
         {
-            filaSelecccionada = e.RowIndex //Fila Seleccionada
+            filaSelecccionada = e.RowIndex;//Fila Seleccionada
             //Recuperamos los datos del grid y los asifnamos a los textbox
             txtDescripcion.Text = dataGridView1.Rows[filaSelecccionada].Cells[0].Value.ToString();
             txtLatitud.Text = dataGridView1.Rows[filaSelecccionada].Cells[1].Value.ToString();
@@ -79,6 +79,34 @@ namespace Factibilidad.Presentacion
             marker.Position = new PointLatLng(Convert.ToDouble(txtLatitud.Text), Convert.ToDouble(txtLongitud.Text));
             //Se posiciona el foco del mapa en ese punto
             gMapControl1.Position = marker.Position;
+        }
+
+        private void gMapControl1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            //se obtiene los datos de lat y lng del mapa usa presiono
+            double lat = gMapControl1.FromLocalToLatLng(e.X, e.Y).Lat;
+            double lng = gMapControl1.FromLocalToLatLng(e.X, e.Y).Lng;
+
+            //Se posicionan en el txt de la latitud y longitud
+            txtLatitud.Text = lat.ToString();
+            txtLongitud.Text = lng.ToString();
+            //Creamos el marcador para moverlo al lugar indicado
+            marker.Position = new PointLatLng(lat, lng);
+            //Tambien se agrega el mensaje al marcador(tooltip)
+            marker.ToolTipText = String.Format("Ubicación: \n Latitud: {0} \n Longitud:{1}", lat, lng);
+
+        }
+
+        private void btnAgregarM_Click(object sender, EventArgs e)
+        {
+            dt.Rows.Add(txtDescripcion.Text,txtLatitud.Text,txtLongitud.Text);//agregar a la tabla
+            //procedimiento para ingresar a una base de datos
+        }
+
+        private void btnEliminarM_Click(object sender, EventArgs e)
+        {
+            dataGridView1.Rows.RemoveAt(filaSelecccionada); //remover de la tabla
+            //procedimeinto para eliminar de una base de datos
         }
     }
 }

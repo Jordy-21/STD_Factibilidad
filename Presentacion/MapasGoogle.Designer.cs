@@ -67,6 +67,8 @@
             this.gMapControl1.Size = new System.Drawing.Size(489, 426);
             this.gMapControl1.TabIndex = 0;
             this.gMapControl1.Zoom = 0D;
+            this.gMapControl1.Load += new System.EventHandler(this.gMapControl1_Load);
+            this.gMapControl1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.gMapControl1_MouseDoubleClick);
             // 
             // label1
             // 
@@ -133,6 +135,7 @@
             this.btnAgregarM.TabIndex = 8;
             this.btnAgregarM.Text = "Agregar";
             this.btnAgregarM.UseVisualStyleBackColor = true;
+            this.btnAgregarM.Click += new System.EventHandler(this.btnAgregarM_Click);
             // 
             // btnEliminarM
             // 
@@ -142,6 +145,7 @@
             this.btnEliminarM.TabIndex = 9;
             this.btnEliminarM.Text = "Eliminar";
             this.btnEliminarM.UseVisualStyleBackColor = true;
+            this.btnEliminarM.Click += new System.EventHandler(this.btnEliminarM_Click);
             // 
             // dataGridView1
             // 
